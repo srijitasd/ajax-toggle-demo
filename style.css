@@ -1,0 +1,121 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+.container  {
+    margin-top: 50px;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.btn-container  {
+    align-self: center;
+    margin-top: 20px;
+}
+
+.btn  {
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn:hover  {
+    background-color: lavender;
+    color: black;
+}
+
+.page-container  {
+    display: grid;
+}
+
+.page-container::before  {
+    content: "";
+    height: -webkit-fill-available;
+    width: 100%;
+    position: absolute;
+    background-image: url('/static/assets/images/hof.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+.hall-of-fame  {
+    margin-top: 20px;
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
+}
+
+
+.hof-header  {
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #03045E;
+}
+
+.hof-container  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-gap: 1rem;
+}
+
+.inter-grp-tour  {
+    grid-row: 1/2;
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 5px 5px rgb(3, 4, 94, 0.5);
+}
+
+.grp-winners  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "third first second";
+    height: auto;
+    margin-left: 3.5rem;
+    margin-right: 4.5rem;
+}
+
+.cards  {
+    justify-self: center;
+}
+
+.cards img {
+    height: 25vw;
+    width: 20vw;
+    align-self: center;
+}
+
+.cards h3  {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #03045E;
+    text-shadow: 0px 3px 5px white;
+}
+
+.first  {
+    margin-top: 5vw;
+}
+
+
+
+
